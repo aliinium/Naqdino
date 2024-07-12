@@ -18,6 +18,7 @@
         <link th:href=@{/css/styles.css} rel="stylesheet" />
         <!-- Scripts -->
         <script th:src=@{/js/getdatafromapi.js}></script>
+        <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
         <script>
             GetTitleFromAPI("https://omdbapi.com/?apikey=1a5410af&i=tt0096895", "mn1");
             GetPosterFromAPI("https://omdbapi.com/?apikey=1a5410af&i=tt0096895", "pst1");
@@ -47,7 +48,7 @@
             var searchbox = document.getElementById("searchbox")
             $(searchbox).on('keyup', function (e) {
                 if (e.key === 'Enter' || e.keyCode === 13) {
-                    document.getElementById("searchbox").submit();
+                    document.getElementById("searchform").submit();
                 }
             });
         </script>
@@ -76,11 +77,11 @@
                     <div class="col-md-10 col-lg-8 col-xl-7">
                         <div class="site-heading">
                             <h1>نقدینو، نقدی نو</h1>
-                            <span class="subheading">بلاگی اختصاصی برای نقد و برسی آثار سینمایی دنیا</span>
+                            <span class="subheading">بلاگی اختصاصی برای نقد و بررسی آثار سینمایی دنیا</span>
                         </div>
                         <div style="margin-top: 25px;">
-                            <form id="searchform">
-                                <input id="searchbox" type="text" placeholder="جست‌وجوی فیلم یا سریال" class="input-group input-group-text" style="border-radius: 10px;">
+                            <form id="searchform" action="search?" method="GET">
+                                <input id="searchbox" name="s" type="text" placeholder="جست‌وجوی فیلم یا سریال" class="input-group input-group-text" style="border-radius: 10px;">
                             </form>
                         </div>
                     </div>

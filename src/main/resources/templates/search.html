@@ -16,8 +16,9 @@
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" rel="stylesheet" type="text/css" />
     <!-- Core theme CSS (includes Bootstrap)-->
     <link th:href=@{/css/styles.css} rel="stylesheet" />
+    <link th:href=@{/css/searchpage.css} rel="stylesheet" />
     <!-- Scripts -->
-    <script th:src=@{/js/moviepagecontroller.js}></script>
+    <script th:src=@{/js/searchpagecontroller.js}></script>
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
     <script>
         var searchbox = document.getElementById("searchbox")
@@ -64,58 +65,10 @@
     </div>
 </header>
 <!-- Main Content-->
-    <div class="container px-4 px-lg-5">
-        <div class="row gx-4 gx-lg-5 justify-content-center">
-        <!-- Post preview-->
-        <div class="post-preview">
-            <div class="row">
-                <div class="col">
-                    <h2 id="movieNameYear" class="post-title" style="text-align: center"></h2>
-                    <h6 class="post-subtitle">
-                        <p>
-                            کارگردان:
-                            <span id="movieDirectorName"></span>
-                        </p>
-                        <p>
-                            ژانر:
-                            <span id="movieGenre"></span>
-                        </p>
-                        <p>
-                            بازیگران:
-                            <span id="movieActors"></span>
-                        </p>
-                        <p>
-                            خلاصه داستان:</br>
-                            <span id="moviePlot" dir="ltr"></span>
-                        </p>
-                    </h6>
-                </div>
-                <div class="col col-lg-2">
-                    <div class="row">
-                        <img id="moviePoster">
-                    </div>
-                    <div class="row" style="margin-top: 5px;">
-                        <form>
-                            <input type="submit" value="نوشتن نقد جدید" style="border-radius: 10px; text-align: center; font-size: 0.9rem; font-weight: bold; width: inherit">
-                        </form>
-                    </div>
-                </div>
-            </div>
-            <hr class="my-4">
-            <div class="row">
-                <div class="col">
-                    <h4 style="font-family: Lalezar; font-weight: normal; text-align: center">آخرین نقدهای نوشته شده</h4>
-                    <div>
-                        <ul>
-                            <li>
-                                <a href="post"><span style="font-weight: bold">عنوان پست</span></a>
-                                از:
-                                <a href="#!"><span style="font-style: italic">علی</span></a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
+<div class="container px-4 px-lg-5">
+    <div class="row gx-4 gx-lg-5 justify-content-center">
+        <div class="row px-4 px-lg-5 searchItemBody">
+
         </div>
     </div>
 </div>
