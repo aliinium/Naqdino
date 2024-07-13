@@ -10865,3 +10865,12 @@ header.masthead .post-heading .meta a {
   font-size: 1rem;
 }
 
+.searchbox {
+  opacity: 0.6;
+  border-radius: 10px;
+  background: #000000;
+  color: #ffffff;
+  border: 0;
+  height: 50px;
+  font-weight: bold;
+}
