@@ -10778,7 +10778,7 @@ header.masthead .post-heading .meta a {
 }
 @media (min-width: 992px) {
   .post-preview > a > .post-title {
-    font-size: 2.25rem;
+    font-size: 2rem;
   }
 }
 
@@ -10807,6 +10807,10 @@ header.masthead .post-heading .meta a {
 
 .post-title {
   font-family: Lalezar;
+}
+
+.post-subtitle {
+  font-weight: normal;
 }
 
 .dashbtn {
@@ -10873,4 +10877,23 @@ header.masthead .post-heading .meta a {
   border: 0;
   height: 50px;
   font-weight: bold;
+}
+
+.userinfo {
+  color: #fff;
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 7px;
+  text-align: center;
+}
+
+.bold {
+  font-weight: bold;
+}
+.center {
+  text-align: center;
+}
+
+.imageinpost {
+  width: 80%;
 }
