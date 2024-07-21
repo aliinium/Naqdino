@@ -1,4 +1,3 @@
-// Make the fetch request with the signal
 const queryString = window.location.search;
 const urlParams = new URLSearchParams(queryString);
 const search = urlParams.get('s');
